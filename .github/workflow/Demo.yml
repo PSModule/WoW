@@ -1,0 +1,16 @@
+name: Demo Workflow
+
+on: [push]
+
+jobs:
+  Test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Publish Module
+        uses: PSModule/Publish-Module@main
+        with:
+          message: "Publishing Module"
