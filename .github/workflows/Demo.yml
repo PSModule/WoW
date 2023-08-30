@@ -18,13 +18,16 @@ jobs:
         uses: PSModule/Build-Module@main
         with:
           message: "Publishing Module"
+          verbose: true
 
       - name: Test Module
         uses: PSModule/Test-Module@main
         with:
           message: "Publishing Module"
+          verbose: true
 
       - name: Publish Module
         uses: PSModule/Publish-Module@main
         with:
           message: "Publishing Module"
+          verbose: true
