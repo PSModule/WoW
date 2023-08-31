@@ -21,18 +21,18 @@ jobs:
       - name: Build Module
         uses: PSModule/Build-Module@main
         with:
-          Path: "Publishing Module"
+          Path: ${{ env.Path }}
           Verbose: true
 
       - name: Test Module
         uses: PSModule/Test-Module@main
         with:
-          Path: "Publishing Module"
+          Path: ${{ env.Path }}
           Verbose: true
 
       - name: Publish Module
         uses: PSModule/Publish-Module@main
         with:
           APIKey: ${{ secrets.APIKEY }}
-          Path:
+          Path: ${{ env.Path }}
           Verbose: true
