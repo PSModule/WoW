@@ -8,7 +8,6 @@ on:
 
 env:
   ModuleName: 'Demo'
-  APIKey: ${{ secrets.APIKEY }}
 
 jobs:
   Test:
@@ -33,5 +32,5 @@ jobs:
       - name: Publish Module
         uses: PSModule/Publish-Module@main
         with:
-          message: "Publishing Module"
-          verbose: true
+          APIKey: ${{ secrets.APIKEY }}
+          Verbose: true
