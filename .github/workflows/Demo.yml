@@ -8,6 +8,7 @@ on:
 
 env:
   ModuleName: 'Demo'
+  Path: '.\src\Demo'
 
 jobs:
   Test:
@@ -20,17 +21,18 @@ jobs:
       - name: Build Module
         uses: PSModule/Build-Module@main
         with:
-          message: "Publishing Module"
-          verbose: true
+          Path: "Publishing Module"
+          Verbose: true
 
       - name: Test Module
         uses: PSModule/Test-Module@main
         with:
-          message: "Publishing Module"
-          verbose: true
+          Path: "Publishing Module"
+          Verbose: true
 
       - name: Publish Module
         uses: PSModule/Publish-Module@main
         with:
           APIKey: ${{ secrets.APIKEY }}
+          Path:
           Verbose: true
