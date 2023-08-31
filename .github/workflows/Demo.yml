@@ -6,6 +6,10 @@ on:
       - '*'
   workflow_dispatch:
 
+env:
+  ModuleName: 'Demo'
+  APIKey: ${{ secrets.APIKEY }}
+
 jobs:
   Test:
     name: Test
