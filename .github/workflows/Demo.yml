@@ -6,10 +6,6 @@ on:
       - '*'
   workflow_dispatch:
 
-env:
-  ModuleName: 'Demo'
-  Path: '.\src\Demo'
-
 jobs:
   Test:
     name: Test
@@ -20,19 +16,11 @@ jobs:
 
       - name: Build Module
         uses: PSModule/Build-Module@main
-        with:
-          Path: ${{ env.Path }}
-          Verbose: true
 
       - name: Test Module
         uses: PSModule/Test-Module@main
-        with:
-          Path: ${{ env.Path }}
-          Verbose: true
 
       - name: Publish Module
         uses: PSModule/Publish-Module@main
         with:
           APIKey: ${{ secrets.APIKEY }}
-          Path: ${{ env.Path }}
-          Verbose: true
