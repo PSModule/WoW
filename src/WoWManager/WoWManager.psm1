@@ -1,6 +1,6 @@
 #Requires -Version 7.0
 #Requires -Modules Pester
-#Requires -Modules @{ ModuleName="Utilities"; ModuleVersion='0.0' }, @{ ModuleName="PATH"; ModuleVersion="0.0" }
+#Requires -Modules Utilities, PATH
 #Requires -PSEdition Core
 
 [Cmdletbinding()]
