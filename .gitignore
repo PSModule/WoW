@@ -10,4 +10,4 @@
 .history/*
 
 # The Powershell build outputs folder
-.outputs/*
+outputs/*

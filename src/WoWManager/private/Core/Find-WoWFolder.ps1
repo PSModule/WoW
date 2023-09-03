@@ -1,4 +1,5 @@
 #Requires -PSEdition Core
+#Requires -Modules NerdFonts
 
 <#
 .SYNOPSIS

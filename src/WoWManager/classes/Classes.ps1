@@ -1,4 +1,5 @@
 #Requires -Version 6.0
+#Requires -Modules PATH, Fonts
 $ClassMap = @(
     [PSCustomObject]@{
         ClassID    = 1
