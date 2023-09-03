@@ -19,6 +19,8 @@ jobs:
 
       - name: Test Module
         uses: PSModule/Test-Module@main
+        with:
+          Verbose: true
 
       - name: Publish Module
         uses: PSModule/Publish-Module@main
