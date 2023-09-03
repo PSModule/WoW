@@ -1,5 +1,4 @@
 #Requires -Version 7.0
-#Requires -Modules Pester, PATH
 #Requires -PSEdition Core
 
 [Cmdletbinding()]

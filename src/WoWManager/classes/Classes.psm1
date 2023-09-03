@@ -1,6 +1,4 @@
 #Requires -Version 6.0
-#Requires -Modules NerdFonts
-#Requires -Modules Fonts
 $ClassMap = @(
     [PSCustomObject]@{
         ClassID    = 1
