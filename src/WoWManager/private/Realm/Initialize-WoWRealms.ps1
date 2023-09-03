@@ -1,5 +1,3 @@
-using module ..\..\classes\classes.psm1
-
 Function Initialize-WoWRealms {
     [CmdletBinding()]
     [OutputType([Realm[]])]
@@ -12,7 +10,7 @@ Function Initialize-WoWRealms {
     $AccountFolders = $WoWAccountsFolderPath | Get-ChildItem -Directory | Where-Object Name -NE SavedVariables
     $RealmNames = $AccountFolders | Get-ChildItem -Directory | Where-Object Name -NE SavedVariables | Select-Object -ExpandProperty Name -Unique
     Write-WoWVerbose "Realms: Found $($RealmNames.count)"
-    
+
     Write-WoWVerbose "Realms: Processing"
     $i = 0
     # $AccountFolder = $AccountFolders | Where-Object name -match "Catchius"
@@ -26,7 +24,7 @@ Function Initialize-WoWRealms {
 
         Write-WoWVerbose "Realms: Processing: $Status $($RealmName): Done"
     }
-    
+
     Write-WoWVerbose "Realms: Processing: Done"
     return $Realms | Sort-Object name
 }

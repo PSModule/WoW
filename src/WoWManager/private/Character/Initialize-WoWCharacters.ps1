@@ -1,5 +1,3 @@
-using module ..\..\classes\classes.psm1
-
 Function Initialize-WoWCharacters {
     [Cmdletbinding()]
     param(
@@ -12,7 +10,7 @@ Function Initialize-WoWCharacters {
     $RealmFolders = $AccountFolders | Get-ChildItem -Directory | Where-Object Name -NE SavedVariables
     $CharFolders = $RealmFolders | Get-ChildItem -Directory | Where-Object Name -NE SavedVariables | Sort-Object name
     Write-WoWVerbose "Characters: Found $($CharFolders.count)"
-    
+
     Write-WoWVerbose "Characters: Processing"
     $i = 0
     Foreach ($CharFolder in $CharFolders) {
@@ -27,8 +25,8 @@ Function Initialize-WoWCharacters {
         $CharRealmName = $CharFolderCN[-2]
         $CharAccountName = $CharFolderCN[-3]
         $Char.Name = $CharName
-        $Char.Realm = $Script:WoW_Realms | Where-Object Name -EQ $CharRealmName 
-        $Char.Account = $Script:WoW_Accounts | Where-Object Name -EQ $CharAccountName 
+        $Char.Realm = $Script:WoW_Realms | Where-Object Name -EQ $CharRealmName
+        $Char.Account = $Script:WoW_Accounts | Where-Object Name -EQ $CharAccountName
         $Char.Account.Characters += $Char
         $Char.IsMainForClass = $false
         $Char.IsMain = $false
@@ -38,7 +36,7 @@ Function Initialize-WoWCharacters {
         $Char.ConfigCachePath = "$($Char.FolderPath)\config-cache.wtf"
         $Char.MacrosCachePath = "$($Char.FolderPath)\macros-cache.txt"
         $Characters += $Char
-        
+
         Write-WoWVerbose "Characters: Processing: $Status $($CharFolder.Name): Done"
     }
 

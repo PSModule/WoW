@@ -1,5 +1,3 @@
-using module ..\..\classes\classes.psm1
-
 Function Initialize-WoWAddon {
     [CmdletBinding()]
     [OutputType([Addon[]])]

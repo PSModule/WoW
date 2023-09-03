@@ -1,4 +1,3 @@
-using module ..\..\Classes\Classes.psm1
 Function Import-WoWRealms {
     [Realm[]]$Realms = $null
     $CacheFilePath = "$Script:WoW_Folder_Cache\Realms.json"
