@@ -129,3 +129,8 @@ enforcement ladder](https://github.com/mozilla/diversity).
 For answers to common questions about this code of conduct, see the FAQ at
 https://www.contributor-covenant.org/faq. Translations are available at
 https://www.contributor-covenant.org/translations.
+
+
+# Code of Conduct
+
+This project has adopted the [DSC Community Code of Conduct](https://dsccommunity.org/code_of_conduct).
