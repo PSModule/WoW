@@ -1,4 +1,4 @@
-#Requires -Version 5.0
+#Requires -Version 6.0
 #Requires -Modules @{ ModuleName="NerdFonts"; ModuleVersion='0.0' }, @{ ModuleName="Fonts"; ModuleVersion='0.0' }
 $ClassMap = @(
     [PSCustomObject]@{

@@ -1,6 +1,4 @@
-#Requires -Version 3.0
-#Requires -Modules @{ ModuleName="Terminal-Icons"; ModuleVersion='0.11' }
-#Requires -Modules @{ ModuleName="posh-git"; ModuleVersion='1.0' }
+#Requires -Version 7.0
 #Requires -PSEdition Core
 
 Function Write-WoWWarning {

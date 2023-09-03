@@ -1,5 +1,5 @@
 #Requires -Version 7.0
-#Requires -Modules Terminal-Icons, posh-git
+#Requires -Modules Pester
 #Requires -Modules @{ ModuleName="Utilities"; ModuleVersion='0.0.1' }, @{ ModuleName="PATH"; RequiredVersion="0.0.4" }
 #Requires -PSEdition Core
 
