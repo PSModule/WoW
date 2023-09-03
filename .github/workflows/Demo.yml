@@ -16,6 +16,8 @@ jobs:
 
       - name: Build Module
         uses: PSModule/Build-Module@main
+        with:
+          Verbose: true
 
       - name: Test Module
         uses: PSModule/Test-Module@main
@@ -26,3 +28,4 @@ jobs:
         uses: PSModule/Publish-Module@main
         with:
           APIKey: ${{ secrets.APIKEY }}
+          Verbose: true
