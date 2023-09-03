@@ -30,4 +30,7 @@ $Param = @{
     Cmdlet = "*"
     Alias = "*"
 }
-Export-ModuleMember @Param
+
+Write-Verbose "Exporting module members"
+
+Export-ModuleMember @Param -Verbose
