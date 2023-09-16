@@ -1,7 +1,3 @@
-#Requires -Version 7.0
-#Requires -PSEdition Core
-#Requires -Modules Utilities
-
 [Cmdletbinding()]
 param()
 

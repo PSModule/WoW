@@ -1,15 +1,15 @@
 @{
     # Author of this module
-    Author        = 'Marius Storhaug'
+    Author      = 'Marius Storhaug'
 
     # Company or vendor of this module
-    CompanyName   = 'ClaweOfTheWild'
+    CompanyName = 'ClaweOfTheWild'
 
     # Description of the functionality provided by this module
-    Description   = 'This module is for working with settings and addons in WoW with PowerShell'
+    Description = 'This module is for working with settings and addons in WoW with PowerShell'
 
     # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
-    PrivateData   = @{
+    PrivateData = @{
 
         PSData = @{
 
@@ -28,12 +28,6 @@
         } # End of PSData hashtable
 
     } # End of PrivateData hashtable
-
-    # HelpInfo URI of this module
-    # HelpInfoURI = ''
-
-    # Default prefix for commands exported from this module. Override the default prefix using Import-Module -Prefix.
-    # DefaultCommandPrefix = ''
 
 }
 
