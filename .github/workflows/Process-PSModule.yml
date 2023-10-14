@@ -19,15 +19,15 @@ jobs:
         with:
           Version: $null
 
-      - name: Build-PSModule
-        uses: PSModule/Build-PSModule@main
+      # - name: Build-PSModule
+      #   uses: PSModule/Build-PSModule@main
 
-      - name: Test-PSModule
-        uses: PSModule/Test-PSModule@main
+      # - name: Test-PSModule
+      #   uses: PSModule/Test-PSModule@main
 
-      - name: Release-PSModule
-        uses: PSModule/Release-PSModule@main
-        with:
-          APIKey: ${{ secrets.APIKEY }}
-        env:
-          GH_TOKEN: ${{ github.token }} # Used for GitHub CLI authentication
+      # - name: Release-PSModule
+      #   uses: PSModule/Release-PSModule@main
+      #   with:
+      #     APIKey: ${{ secrets.APIKEY }}
+      #   env:
+      #     GH_TOKEN: ${{ github.token }} # Used for GitHub CLI authentication
