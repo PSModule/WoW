@@ -1,5 +1,4 @@
 #Requires -Version 7.0
-#Requires -PSEdition Core
 #Requires -Modules PATH, Fonts
 
 Function Write-WoWWarning {
