@@ -133,6 +133,7 @@ $ClassMap = @(
         ColorDecG  = 48
         ColorDecB  = 201
     }  # 12 - Demon Hunter
+    # Missing Evoker
 )
 
 Enum Role {
