@@ -22,8 +22,8 @@ jobs:
       - name: Build-PSModule
         uses: PSModule/Build-PSModule@main
 
-      # - name: Test-PSModule
-      #   uses: PSModule/Test-PSModule@main
+      - name: Test-PSModule
+        uses: PSModule/Test-PSModule@main
 
       # - name: Release-PSModule
       #   uses: PSModule/Release-PSModule@main
