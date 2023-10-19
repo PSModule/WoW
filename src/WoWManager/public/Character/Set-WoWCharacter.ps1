@@ -16,18 +16,18 @@ Function Set-WoWCharacter {
         $ClassName
     )
 
-    $Character = [Character]($Script:WoW_Characters | Where-Object {($_.Realm.Name -match $Realm) -and ($_.Name -match $Name)} | Select-Object -first 1)
+    $Character = [Character]($Script:WoW_Characters | Where-Object { ($_.Realm.Name -match $Realm) -and ($_.Name -match $Name) } | Select-Object -First 1)
     if ($Character.count -eq 1) {
-        if($PSBoundParameters.ContainsKey('IsMain')) {
+        if ($PSBoundParameters.ContainsKey('IsMain')) {
             $Character.IsMain = $IsMain
         }
-        if($PSBoundParameters.ContainsKey('IsMainForClass')) {
+        if ($PSBoundParameters.ContainsKey('IsMainForClass')) {
             $Character.IsMainForClass = $IsMainForClass
         }
-        if($PSBoundParameters.ContainsKey('ClassName')) {
-            $Character.Class = $Script:WoW_Classes | Where-Object Name -match $ClassName
+        if ($PSBoundParameters.ContainsKey('ClassName')) {
+            $Character.Class = $Script:WoW_Classes | Where-Object Name -Match $ClassName
         }
-        
+
         Export-WoWCharacters
     }
 }

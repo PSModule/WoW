@@ -9,12 +9,12 @@ Function New-BNetAPIUserAccessToken {
     $Body = @{
         client_id     = $ClientID
         client_secret = $ClientSecret
-        grant_type    = "client_credentials"
-        scope         = ""
+        grant_type    = 'client_credentials'
+        scope         = ''
     }
-    
+
     try {
-        $Response = Invoke-RestMethod -Method 'Post' -Uri "$($Script:BNetAPI_Settings.BNetAPIPath)oauth/token" -Body $Body -ContentType "application/x-www-form-urlencoded" -ErrorAction Stop
+        $Response = Invoke-RestMethod -Method 'Post' -Uri "$($Script:BNetAPI_Settings.BNetAPIPath)oauth/token" -Body $Body -ContentType 'application/x-www-form-urlencoded' -ErrorAction Stop
     } catch {
         throw $_
     }

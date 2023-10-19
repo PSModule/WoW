@@ -16,11 +16,11 @@ Function Find-WoWFolder {
     [Cmdletbinding()]
     [OutputType([System.IO.DirectoryInfo])]
     param(
-        $Path = "C:\Program Files (x86)\World of Warcraft\_retail_"
+        $Path = 'C:\Program Files (x86)\World of Warcraft\_retail_'
     )
-    $DefaultPath = "C:\Program Files (x86)\World of Warcraft\_retail_"
+    $DefaultPath = 'C:\Program Files (x86)\World of Warcraft\_retail_'
 
-    Write-WoWVerbose "Looking for WoW folders"
+    Write-WoWVerbose 'Looking for WoW folders'
     if (Test-Path -Path $Path) {
         Write-WoWVerbose "Found $Path"
         Write-WoWVerbose "Looking for WoW.exe in $Path"
@@ -38,11 +38,11 @@ Function Find-WoWFolder {
             return $WoWFile.Directory
         }
     } else {
-        $Disks = Get-Volume | Where-Object {($null -ne $_.DriveLetter) -and ($_.DriveType -eq 'Fixed')} | Select-Object -ExpandProperty DriveLetter | ForEach-Object { Get-Item -Path "$_`:\"}
-        $WoWFolders = $Disks | Get-ChildItem -Recurse -ErrorAction SilentlyContinue -Include "wow.exe" | Select-Object -ExpandProperty DirectoryName
+        $Disks = Get-Volume | Where-Object { ($null -ne $_.DriveLetter) -and ($_.DriveType -eq 'Fixed') } | Select-Object -ExpandProperty DriveLetter | ForEach-Object { Get-Item -Path "$_`:\" }
+        $WoWFolders = $Disks | Get-ChildItem -Recurse -ErrorAction SilentlyContinue -Include 'wow.exe' | Select-Object -ExpandProperty DirectoryName
 
         if ($WoWFolders.count -gt 1) {
-            Write-Host "Multiple instances of WoW detected:"
+            Write-Host 'Multiple instances of WoW detected:'
             Write-Host
             $i = 0
             # $WoWFolder = $WoWFolders[0]
@@ -50,9 +50,8 @@ Function Find-WoWFolder {
                 Write-Host "$i - $WoWFolder"
                 $i++
             }
-            $Selection = Read-Host -Prompt "Select WoW instance: "
-        }
-        else {
+            $Selection = Read-Host -Prompt 'Select WoW instance: '
+        } else {
             return $WoWFolders
         }
         return $WoWFolders[$Selection]

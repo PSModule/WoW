@@ -5,13 +5,13 @@ Function Initialize-WoWCharacters {
     )
     [Character[]]$Characters = $null
 
-    Write-WoWVerbose "Characters: Finding"
+    Write-WoWVerbose 'Characters: Finding'
     $AccountFolders = $WoWAccountsFolderPath | Get-ChildItem -Directory | Where-Object Name -NE SavedVariables
     $RealmFolders = $AccountFolders | Get-ChildItem -Directory | Where-Object Name -NE SavedVariables
     $CharFolders = $RealmFolders | Get-ChildItem -Directory | Where-Object Name -NE SavedVariables | Sort-Object name
     Write-WoWVerbose "Characters: Found $($CharFolders.count)"
 
-    Write-WoWVerbose "Characters: Processing"
+    Write-WoWVerbose 'Characters: Processing'
     $i = 0
     Foreach ($CharFolder in $CharFolders) {
         $i++
@@ -40,6 +40,6 @@ Function Initialize-WoWCharacters {
         Write-WoWVerbose "Characters: Processing: $Status $($CharFolder.Name): Done"
     }
 
-    Write-WoWVerbose "Characters: Processing: Done"
+    Write-WoWVerbose 'Characters: Processing: Done'
     return $Characters | Sort-Object name
 }

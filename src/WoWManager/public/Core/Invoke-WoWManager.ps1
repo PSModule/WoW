@@ -15,7 +15,7 @@ Function Invoke-WoWManager {
     [CmdletBinding()]
     param()
     #Common date format
-    $Script:WoW_DateFormat = "yyyyMMdd-HHmmss"
+    $Script:WoW_DateFormat = 'yyyyMMdd-HHmmss'
 
     $Script:WoW_Folder_Root = Find-WoWFolder
     $Script:WoW_Folder_WTF = Get-Item "$Script:WoW_Folder_Root\WTF"
@@ -24,7 +24,7 @@ Function Invoke-WoWManager {
 
     #Location for saving data
     $Script:WoW_Folder_Cache = Get-WoWCacheFolder -FolderPath "$env:appdata\WoWManager"
-    
+
     #Preparing connection with BNet API
     $Script:BNetAPI_AccessToken = New-BNetAPIUserAccessToken
     Import-BNetAPISettings
@@ -35,7 +35,7 @@ Function Invoke-WoWManager {
     [Account[]]$Script:WoW_Accounts = Initialize-WoWAccounts -WoWAccountsFolderPath $Script:WoW_Folder_Accounts
     Import-WoWAccounts
     Export-WoWAccounts
-    
+
     #[Realm[]]$Script:WoW_Realms = Initialize-WoWRealms -WoWAccountsFolderPath $Script:WoW_Folder_Accounts
     [Realm[]]$Script:WoW_Realms = Import-WowRealms
     Export-WoWRealms

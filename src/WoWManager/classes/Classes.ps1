@@ -3,8 +3,8 @@
 $ClassMap = @(
     [PSCustomObject]@{
         ClassID    = 1
-        ClassName  = "Warrior"
-        ColorHex   = "#C79C6E"
+        ClassName  = 'Warrior'
+        ColorHex   = '#C79C6E'
         ColorFracR = 0.78
         ColorFracG = 0.61
         ColorFracB = 0.43
@@ -14,8 +14,8 @@ $ClassMap = @(
     }, #  1 - Warrior
     [PSCustomObject]@{
         ClassID    = 2
-        ClassName  = "Paladin"
-        ColorHex   = "#F58CBA"
+        ClassName  = 'Paladin'
+        ColorHex   = '#F58CBA'
         ColorFracR = 0.96
         ColorFracG = 0.55
         ColorFracB = 0.73
@@ -25,8 +25,8 @@ $ClassMap = @(
     }, #  2 - Paladin
     [PSCustomObject]@{
         ClassID    = 3
-        ClassName  = "Hunter"
-        ColorHex   = "#ABD473"
+        ClassName  = 'Hunter'
+        ColorHex   = '#ABD473'
         ColorFracR = 0.67
         ColorFracG = 0.83
         ColorFracB = 0.45
@@ -36,8 +36,8 @@ $ClassMap = @(
     }, #  3 - Hunter
     [PSCustomObject]@{
         ClassID    = 4
-        ClassName  = "Rogue"
-        ColorHex   = "#FFF569"
+        ClassName  = 'Rogue'
+        ColorHex   = '#FFF569'
         ColorFracR = 1.00
         ColorFracG = 0.96
         ColorFracB = 0.41
@@ -47,8 +47,8 @@ $ClassMap = @(
     }, #  4 - Rogue
     [PSCustomObject]@{
         ClassID    = 5
-        ClassName  = "Priest"
-        ColorHex   = "#FFFFFF"
+        ClassName  = 'Priest'
+        ColorHex   = '#FFFFFF'
         ColorFracR = 1.00
         ColorFracG = 1.00
         ColorFracB = 1.00
@@ -58,8 +58,8 @@ $ClassMap = @(
     }, #  5 - Priest
     [PSCustomObject]@{
         ClassID    = 6
-        ClassName  = "Death Knight"
-        ColorHex   = "#C41F3B"
+        ClassName  = 'Death Knight'
+        ColorHex   = '#C41F3B'
         ColorFracR = 0.77
         ColorFracG = 0.12
         ColorFracB = 0.23
@@ -69,8 +69,8 @@ $ClassMap = @(
     }, #  6 - Death Knight
     [PSCustomObject]@{
         ClassID    = 7
-        ClassName  = "Shaman"
-        ColorHex   = "#0070DE"
+        ClassName  = 'Shaman'
+        ColorHex   = '#0070DE'
         ColorFracR = 0.00
         ColorFracG = 0.44
         ColorFracB = 0.87
@@ -80,8 +80,8 @@ $ClassMap = @(
     }, #  7 - Shaman
     [PSCustomObject]@{
         ClassID    = 8
-        ClassName  = "Mage"
-        ColorHex   = "#69CCF0"
+        ClassName  = 'Mage'
+        ColorHex   = '#69CCF0'
         ColorFracR = 0.41
         ColorFracG = 0.80
         ColorFracB = 0.94
@@ -91,8 +91,8 @@ $ClassMap = @(
     }, #  8 - Mage
     [PSCustomObject]@{
         ClassID    = 9
-        ClassName  = "Warlock"
-        ColorHex   = "#9482C9"
+        ClassName  = 'Warlock'
+        ColorHex   = '#9482C9'
         ColorFracR = 0.58
         ColorFracG = 0.51
         ColorFracB = 0.79
@@ -102,8 +102,8 @@ $ClassMap = @(
     }, #  9 - Warlock
     [PSCustomObject]@{
         ClassID    = 10
-        ClassName  = "Monk"
-        ColorHex   = "#00FF96"
+        ClassName  = 'Monk'
+        ColorHex   = '#00FF96'
         ColorFracR = 0.00
         ColorFracG = 1.00
         ColorFracB = 0.59
@@ -113,8 +113,8 @@ $ClassMap = @(
     }, # 10 - Monk
     [PSCustomObject]@{
         ClassID    = 11
-        ClassName  = "Druid"
-        ColorHex   = "#FF7D0A"
+        ClassName  = 'Druid'
+        ColorHex   = '#FF7D0A'
         ColorFracR = 1.00
         ColorFracG = 0.49
         ColorFracB = 0.04
@@ -124,8 +124,8 @@ $ClassMap = @(
     }, # 11 - Druid
     [PSCustomObject]@{
         ClassID    = 12
-        ClassName  = "Demon Hunter"
-        ColorHex   = "#A330C9"
+        ClassName  = 'Demon Hunter'
+        ColorHex   = '#A330C9'
         ColorFracR = 0.64
         ColorFracG = 0.19
         ColorFracB = 0.79
@@ -190,7 +190,7 @@ Class Addon {
     [string]$AddonFilePath
     [string]$AddonFile
 
-    Addon(){}
+    Addon() {}
 
     [string]ToString() {
         return $this.Name
@@ -231,7 +231,7 @@ Class Class {
     [string]$Name
     [PowerType]$PowerType
 
-    Class(){}
+    Class() {}
 
     Class (
         [UInt16]$ID,
@@ -325,10 +325,10 @@ Class Character {
     [bool]$HasNewMail
     [int]$Durability
 
-    Character(){}
+    Character() {}
 
     [string]ToString() {
-        return $this.Name + " - " + $this.Realm.Name
+        return $this.Name + ' - ' + $this.Realm.Name
     }
 }
 
@@ -337,20 +337,20 @@ Class Currency {
     [string]$Name
     [int]$Amount
 
-    Currency(){}
+    Currency() {}
 
     Currency(
         [UInt16]$ID,
         [string]$Name,
         [int]$Amount
-    ){
+    ) {
         $this.ID = $ID
         $this.Name = $Name
         $this.Amount = $Amount
     }
 
-    [string]ToString(){
-        return $this.Amount + "x " + $this.Name
+    [string]ToString() {
+        return $this.Amount + 'x ' + $this.Name
     }
 }
 
@@ -358,7 +358,7 @@ Class PowerType {
     [UInt16]$ID
     [string]$Name
 
-    PowerType(){}
+    PowerType() {}
 
     PowerType(
         [UInt16]$ID,
@@ -380,7 +380,7 @@ Class Race {
     [bool]$IsSelectable
     [bool]$IsAlliedRace
 
-    Race(){}
+    Race() {}
 
     Race (
         [UInt16]$ID,
@@ -412,7 +412,7 @@ Class Realm {
     [bool]$IsTournament
     [string]$Slug
 
-    Realm(){}
+    Realm() {}
 
     Realm (
         [UInt16]$ID,
@@ -454,7 +454,7 @@ Class Specialization {
     [PowerType]$PowerType
     [Role]$Role
 
-    Specialization(){}
+    Specialization() {}
 
     Specialization(
         [UInt16]$ID,

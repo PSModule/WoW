@@ -1,10 +1,4 @@
 @{
-    # Author of this module
-    Author      = 'Marius Storhaug'
-
-    # Company or vendor of this module
-    CompanyName = 'ClaweOfTheWild'
-
     # Description of the functionality provided by this module
     Description = 'This module is for working with settings and addons in WoW with PowerShell'
 

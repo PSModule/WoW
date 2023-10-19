@@ -5,5 +5,5 @@ Function Get-WoWAddon {
         [String]
         $Name
     )
-    return $Script:WoW_Addons | Where-Object Name -match $Name
+    return $Script:WoW_Addons | Where-Object Name -Match $Name
 }

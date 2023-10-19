@@ -5,5 +5,5 @@ Function Get-WoWRealm {
         [String]
         $Name
     )
-    return $Script:WoW_Realms | Where-Object Name -match $Name
+    return $Script:WoW_Realms | Where-Object Name -Match $Name
 }

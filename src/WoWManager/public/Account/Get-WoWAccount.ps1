@@ -4,5 +4,5 @@ Function Get-WoWAccount {
         [String]
         $Name
     )
-    return $Script:WoW_Accounts | Where-Object Name -match $Name
+    return $Script:WoW_Accounts | Where-Object Name -Match $Name
 }

@@ -6,12 +6,12 @@ Function Get-BNetAPIUserAccessToken {
         $Region = $Script:BNetAPI_Settings.Region
     )
     $Body = @{
-        ":region" = $Region
+        ':region' = $Region
         token     = $Token
     }
-    
+
     try {
-        $Response = Invoke-RestMethod -Method Post -Uri "$($Script:BNetAPI_Settings.BNetAPIPath)oauth/check_token" -Body $Body -ContentType "application/x-www-form-urlencoded" -ErrorAction Stop
+        $Response = Invoke-RestMethod -Method Post -Uri "$($Script:BNetAPI_Settings.BNetAPIPath)oauth/check_token" -Body $Body -ContentType 'application/x-www-form-urlencoded' -ErrorAction Stop
     } catch {
         throw $_
     }

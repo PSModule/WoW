@@ -4,9 +4,9 @@ Function Import-WoWPowerType {
         $ImportedPowerTypes = Get-Content $CacheFilePath | ConvertFrom-Json
         foreach ($ImportedPowerType in $ImportedPowerTypes) {
             $PowerType = [PowerType]::new()
-           
+
         }
     } else {
-        Write-WoWVerbose "Import-WoWCharacters: Nothing to import"
+        Write-WoWVerbose 'Import-WoWCharacters: Nothing to import'
     }
 }

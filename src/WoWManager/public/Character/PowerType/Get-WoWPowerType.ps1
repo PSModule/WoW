@@ -4,5 +4,5 @@ Function Get-WoWPowerType {
         [String]
         $Name
     )
-    return $Script:WoW_PowerTypes | Where-Object Name -match $Name
+    return $Script:WoW_PowerTypes | Where-Object Name -Match $Name
 }

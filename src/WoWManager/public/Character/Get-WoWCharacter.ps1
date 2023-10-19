@@ -4,5 +4,5 @@ Function Get-WoWCharacter {
         [String]
         $Name
     )
-    return $Script:WoW_Characters | Where-Object Name -match $Name
+    return $Script:WoW_Characters | Where-Object Name -Match $Name
 }

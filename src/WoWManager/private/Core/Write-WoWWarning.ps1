@@ -9,7 +9,7 @@ Function Write-WoWWarning {
         $Message
     )
     $CallStack = (Get-PSCallStack).Command | Select-Object -SkipLast 1
-    if ($CallStack.count -gt 1)  {
+    if ($CallStack.count -gt 1) {
         $CallStack = $CallStack | Select-Object -Skip 1
         [array]::Reverse($CallStack)
     }

@@ -18,7 +18,7 @@ Function Import-WoWRealms {
         }
         return $Realms
     } else {
-        Write-WoWVerbose "Import-WoWRealms: Nothing to import"
+        Write-WoWVerbose 'Import-WoWRealms: Nothing to import'
         return
     }
 }

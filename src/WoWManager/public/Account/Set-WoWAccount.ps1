@@ -8,7 +8,7 @@ Function Set-WoWAccount {
         $IsMain
     )
 
-    [Account]$Account = Get-WoWAccount | Where-Object Name -match $Name
+    [Account]$Account = Get-WoWAccount | Where-Object Name -Match $Name
     $Account.IsMain = $IsMain
     Export-WoWAccounts
 }

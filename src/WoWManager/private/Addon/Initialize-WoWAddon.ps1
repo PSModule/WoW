@@ -8,12 +8,12 @@ Function Initialize-WoWAddon {
     )
     [Addon[]]$Addons = $null
 
-    Write-WoWVerbose "Addons: Finding"
+    Write-WoWVerbose 'Addons: Finding'
     $WoWAddonsFolders = $WoWAddonsFolderPath | Get-ChildItem -Directory
-    $AddonTOCFiles = $WoWAddonsFolders | Get-ChildItem | Where-Object  name -Like *.toc | Sort-Object name
+    $AddonTOCFiles = $WoWAddonsFolders | Get-ChildItem | Where-Object name -Like *.toc | Sort-Object name
     Write-WoWVerbose "Addons: Found $($AddonTOCFiles.count)"
 
-    Write-WoWVerbose "Addons: Processing"
+    Write-WoWVerbose 'Addons: Processing'
     $i = 0
     foreach ($AddonTOCFile in $AddonTOCFiles) {
         $i++
@@ -28,56 +28,56 @@ Function Initialize-WoWAddon {
 
         # $Line = $Content[0]
         foreach ($Line in $Content) {
-            if ($Line -like "*##*Title:*") {
-                $Text = ""
-                $Text = ($Line -split "Title:").trim()[-1]
-                $Text = $Text.Replace("|r", '')
-                $Text = $Text.Replace("|c", "#|")
-                $Text = $Text.Split("#")
+            if ($Line -like '*##*Title:*') {
+                $Text = ''
+                $Text = ($Line -split 'Title:').trim()[-1]
+                $Text = $Text.Replace('|r', '')
+                $Text = $Text.Replace('|c', '#|')
+                $Text = $Text.Split('#')
                 $Text = $Text.trim()
 
                 $Title = $null
                 # $Part = $Text[0]
                 foreach ($Part in $Text) {
-                    if ($Part -like "|*") {
+                    if ($Part -like '|*') {
                         $Part = $Part.Substring(9)
                     }
                     $Title += $Part
                 }
                 $Addon.Name = $Title
             }
-            if ($Line -like "*##*Interface:*") {
-                $Interface = ($Line -split "Interface:").trim()[-1]
+            if ($Line -like '*##*Interface:*') {
+                $Interface = ($Line -split 'Interface:').trim()[-1]
                 $Addon.Interface = $Interface
             }
-            if ($Line -like "*##*SavedVariables:*") {
-                [string[]]$SavedVariables = ($Line -split "SavedVariables:").trim()
+            if ($Line -like '*##*SavedVariables:*') {
+                [string[]]$SavedVariables = ($Line -split 'SavedVariables:').trim()
                 $SavedVariables = $SavedVariables[1..($SavedVariables.Length - 1)]
                 $Addon.SavedVariables = $SavedVariables.split(',').Trim()
                 $Addon.AccountSettingsFile = "$SettingsFileName"
                 $Addon.AccountSettingsFileBackup = "$SettingsFileName.bak"
             }
-            if ($Line -like "*##*SavedVariablesPerCharacter:*") {
-                [string[]]$SavedVariablesPerCharacter = ($Line -split "SavedVariablesPerCharacter:").trim()
+            if ($Line -like '*##*SavedVariablesPerCharacter:*') {
+                [string[]]$SavedVariablesPerCharacter = ($Line -split 'SavedVariablesPerCharacter:').trim()
                 $SavedVariablesPerCharacter = [string[]]$SavedVariablesPerCharacter[1..($SavedVariablesPerCharacter.Length - 1)]
                 $Addon.SavedVariablesPerCharacter = $SavedVariablesPerCharacter.split(',').Trim()
                 $Addon.CharacterSettingsFile = "$SettingsFileName"
                 $Addon.CharacterSettingsFileBackup = "$SettingsFileName.bak"
             }
-            if ($Line -like "*##*RequiredDeps:*") {
-                [string[]]$RequiredDeps = ($Line -split "RequiredDeps:").trim()
+            if ($Line -like '*##*RequiredDeps:*') {
+                [string[]]$RequiredDeps = ($Line -split 'RequiredDeps:').trim()
                 $RequiredDeps = [string[]]$RequiredDeps[1..($RequiredDeps.Length - 1)]
                 $RequiredDeps = $RequiredDeps.split(',').Trim()
                 $Addon.RequiredDeps = $RequiredDeps
             }
-            if ($Line -like "*##*OptionalDeps:*") {
-                [string[]]$OptionalDeps = ($Line -split "OptionalDeps:").trim()
+            if ($Line -like '*##*OptionalDeps:*') {
+                [string[]]$OptionalDeps = ($Line -split 'OptionalDeps:').trim()
                 $OptionalDeps = [string[]]$OptionalDeps[1..($OptionalDeps.Length - 1)]
                 $OptionalDeps = $OptionalDeps.split(',').Trim()
                 $Addon.OptionalDeps = $OptionalDeps
             }
-            if ($Line -like "*##*DefaultState:*") {
-                $DefaultState = ($Line -split "DefaultState:").trim()[-1]
+            if ($Line -like '*##*DefaultState:*') {
+                $DefaultState = ($Line -split 'DefaultState:').trim()[-1]
                 $Addon.DefaultState = $DefaultState
             }
         }
@@ -85,6 +85,6 @@ Function Initialize-WoWAddon {
         $Addons += $Addon
         Write-WoWVerbose "Addons: Processing: $Status $($AddonTOCFile.Name): Done"
     }
-    Write-WoWVerbose "Addons: Processing: Done"
+    Write-WoWVerbose 'Addons: Processing: Done'
     return $Addons | Sort-Object name
 }
