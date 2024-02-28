@@ -1,7 +1,7 @@
 ﻿if ([string]::IsNullOrEmpty($ExampleState)) {
-    Write-Host 'Example not initialized.'
-    Write-Host 'Initializing now...'
+    Write-WoWVerbose 'Example not initialized.'
+    Write-WoWVerbose 'Initializing now...'
     $ExampleState = 'Initialized'
 } else {
-    Write-Host 'Example already initialized.'
+    Write-WoWVerbose 'Example already initialized.'
 }

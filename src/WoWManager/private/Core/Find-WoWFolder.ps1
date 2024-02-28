@@ -42,12 +42,11 @@ Function Find-WoWFolder {
         $WoWFolders = $Disks | Get-ChildItem -Recurse -ErrorAction SilentlyContinue -Include 'wow.exe' | Select-Object -ExpandProperty DirectoryName
 
         if ($WoWFolders.count -gt 1) {
-            Write-Host 'Multiple instances of WoW detected:'
-            Write-Host
+            Write-WoWVerbose 'Multiple instances of WoW detected:'
             $i = 0
             # $WoWFolder = $WoWFolders[0]
             foreach ($WoWFolder in $WoWFolders) {
-                Write-Host "$i - $WoWFolder"
+                Write-WoWVerbose "$i - $WoWFolder"
                 $i++
             }
             $Selection = Read-Host -Prompt 'Select WoW instance: '

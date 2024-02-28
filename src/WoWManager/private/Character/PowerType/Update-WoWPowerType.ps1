@@ -1,4 +1,4 @@
-Function Update-WoWPowerTypes {
+Function Update-WoWPowerType {
     [Diagnostics.CodeAnalysis.SuppressMessageAttribute(
         'PSUseShouldProcessForStateChangingFunctions', '', Scope = 'Function',
         Justification = 'Not changing state, just an object in memory.'
