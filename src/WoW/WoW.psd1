@@ -4,9 +4,9 @@
     PrivateData   = @{
         PSData = @{
             Tags       = 'WoW', 'retail', 'Games', 'Multiboxing'
-            LicenseUri = 'https://dev.azure.com/Claweofthewild/WoWManager/'
-            ProjectUri = 'https://dev.azure.com/Claweofthewild/WoWManager/'
-            IconUri    = 'https://dev.azure.com/Claweofthewild/WoWManager/icons/icon.png'
+            LicenseUri = 'https://dev.azure.com/PSModule/WoW/'
+            ProjectUri = 'https://dev.azure.com/PSModule/WoW/'
+            IconUri    = 'https://dev.azure.com/PSModule/WoW/icons/icon.png'
         }
     }
 }
