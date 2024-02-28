@@ -1,5 +1,20 @@
-
 Function Get-WoWCacheFolder {
+    <#
+    .SYNOPSIS
+    Short description
+
+    .DESCRIPTION
+    Long description
+
+    .PARAMETER FolderPath
+    Parameter description
+
+    .EXAMPLE
+    An example
+
+    .NOTES
+    General notes
+    #>
     [Cmdletbinding()]
     param(
         [string]

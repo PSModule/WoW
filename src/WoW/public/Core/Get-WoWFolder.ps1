@@ -1,4 +1,20 @@
 Function Get-WoWFolder {
+    <#
+    .SYNOPSIS
+    Short description
+    
+    .DESCRIPTION
+    Long description
+    
+    .PARAMETER Folder
+    Parameter description
+    
+    .EXAMPLE
+    An example
+    
+    .NOTES
+    General notes
+    #>
     param(
         [ValidateSet('All', 'Root', 'Account', 'WTF', 'Cache')]
         [String]

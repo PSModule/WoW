@@ -1,4 +1,17 @@
 Function Export-BNetAPISetting {
+    <#
+    .SYNOPSIS
+    Short description
+
+    .DESCRIPTION
+    Long description
+
+    .EXAMPLE
+    An example
+
+    .NOTES
+    General notes
+    #>
     [CmdletBinding()]
     param()
     Write-WoWVerbose 'Export-BNetAPISetting: Export: Start'

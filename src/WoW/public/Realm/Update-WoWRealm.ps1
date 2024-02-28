@@ -1,4 +1,17 @@
 Function Update-WoWRealm {
+    <#
+    .SYNOPSIS
+    Short description
+    
+    .DESCRIPTION
+    Long description
+    
+    .EXAMPLE
+    An example
+    
+    .NOTES
+    General notes
+    #>
     [Diagnostics.CodeAnalysis.SuppressMessageAttribute(
         'PSUseShouldProcessForStateChangingFunctions', '', Scope = 'Function',
         Justification = 'Not changing state, just an object in memory.'

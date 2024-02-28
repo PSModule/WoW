@@ -1,4 +1,17 @@
 Function Import-WoWRealm {
+    <#
+    .SYNOPSIS
+    Short description
+
+    .DESCRIPTION
+    Long description
+
+    .EXAMPLE
+    An example
+
+    .NOTES
+    General notes
+    #>
     [Realm[]]$Realms = $null
     $CacheFilePath = "$Script:WoW_Folder_Cache\Realms.json"
     if (Test-Path $CacheFilePath) {

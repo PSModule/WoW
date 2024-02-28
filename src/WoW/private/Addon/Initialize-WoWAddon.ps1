@@ -1,4 +1,20 @@
 Function Initialize-WoWAddon {
+    <#
+    .SYNOPSIS
+    Short description
+    
+    .DESCRIPTION
+    Long description
+    
+    .PARAMETER WoWAddonsFolderPath
+    Parameter description
+    
+    .EXAMPLE
+    An example
+    
+    .NOTES
+    General notes
+    #>
     [CmdletBinding()]
     [OutputType([Addon[]])]
     Param(

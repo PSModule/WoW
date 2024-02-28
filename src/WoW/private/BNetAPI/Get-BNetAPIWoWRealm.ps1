@@ -1,4 +1,17 @@
 Function Get-BNetAPIWoWRealm {
+    <#
+    .SYNOPSIS
+    Short description
+    
+    .DESCRIPTION
+    Long description
+    
+    .EXAMPLE
+    An example
+    
+    .NOTES
+    General notes
+    #>
     [CmdletBinding()]
     param()
     Write-WoWVerbose 'Get-BNetAPIWoWRealm: Finding'

@@ -1,4 +1,20 @@
 Function Initialize-WoWCharacter {
+    <#
+    .SYNOPSIS
+    Short description
+    
+    .DESCRIPTION
+    Long description
+    
+    .PARAMETER WoWAccountsFolderPath
+    Parameter description
+    
+    .EXAMPLE
+    An example
+    
+    .NOTES
+    General notes
+    #>
     [Cmdletbinding()]
     param(
         $WoWAccountsFolderPath = $Script:WoW_Folder_Accounts

@@ -1,4 +1,17 @@
 Function Select-WoWAddon {
+    <#
+    .SYNOPSIS
+    Short description
+    
+    .DESCRIPTION
+    Long description
+    
+    .EXAMPLE
+    An example
+    
+    .NOTES
+    General notes
+    #>
     [CmdletBinding()]
     [OutputType([Addon[]])]
     param()

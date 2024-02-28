@@ -1,5 +1,20 @@
-
 Function Get-BNetAPIUserInfo {
+    <#
+    .SYNOPSIS
+    Short description
+
+    .DESCRIPTION
+    Long description
+
+    .PARAMETER Token
+    Parameter description
+
+    .EXAMPLE
+    An example
+
+    .NOTES
+    General notes
+    #>
     [CmdletBinding()]
     param(
         $Token = $Script:BNetAPI_AccessToken

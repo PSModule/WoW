@@ -1,4 +1,17 @@
 Function Import-WoWCharacter {
+    <#
+    .SYNOPSIS
+    Short description
+
+    .DESCRIPTION
+    Long description
+
+    .EXAMPLE
+    An example
+
+    .NOTES
+    General notes
+    #>
     $CacheFilePath = "$Script:WoW_Folder_Cache\Characters.json"
     if (Test-Path $CacheFilePath) {
         $ImportedCharacters = Get-Content $CacheFilePath | ConvertFrom-Json

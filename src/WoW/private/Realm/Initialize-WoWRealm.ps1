@@ -1,4 +1,20 @@
 Function Initialize-WoWRealm {
+    <#
+    .SYNOPSIS
+    Short description
+
+    .DESCRIPTION
+    Long description
+
+    .PARAMETER WoWAccountsFolderPath
+    Parameter description
+
+    .EXAMPLE
+    An example
+
+    .NOTES
+    General notes
+    #>
     [CmdletBinding()]
     [OutputType([Realm[]])]
     Param(

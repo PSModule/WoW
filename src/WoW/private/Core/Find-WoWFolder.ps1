@@ -1,18 +1,18 @@
 #Requires -PSEdition Core
 #Requires -Modules NerdFonts
 
-<#
-.SYNOPSIS
-Find WoW (retail) folder
-
-.DESCRIPTION
-Finds WoW (retail) folder, by first checking for the default location, then looking for all folders with a WoW.exe file. User is prompted for possible location where WoW.exe is found.
-
-.EXAMPLE
-Get-WoWFolder
-
-#>
 Function Find-WoWFolder {
+    <#
+    .SYNOPSIS
+    Find WoW (retail) folder
+
+    .DESCRIPTION
+    Finds WoW (retail) folder, by first checking for the default location, then looking for all folders with a WoW.exe file. User is prompted for possible location where WoW.exe is found.
+
+    .EXAMPLE
+    Get-WoWFolder
+
+    #>
     [Cmdletbinding()]
     [OutputType([System.IO.DirectoryInfo])]
     param(
