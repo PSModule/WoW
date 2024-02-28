@@ -1,6 +1,6 @@
 #Requires -Version 6.0
 #Requires -Modules PATH, Fonts
-$ClassMap = @(
+$script:ClassMap = @(
     [PSCustomObject]@{
         ClassID    = 1
         ClassName  = 'Warrior'
