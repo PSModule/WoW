@@ -2,8 +2,7 @@
 Function Get-BNetAPIUserInfo {
     [CmdletBinding()]
     param(
-        $Token = $Script:BNetAPI_AccessToken,
-        $Region = $Script:BNetAPI_Settings.Region
+        $Token = $Script:BNetAPI_AccessToken
     )
     $Headers = @{
         Authorization = "Bearer $Token"

@@ -1,6 +1,10 @@
 
 #https://develop.battle.net/documentation/guides/using-oauth/client-credentials-flow
 Function New-BNetAPIUserAccessToken {
+    [Diagnostics.CodeAnalysis.SuppressMessageAttribute(
+        'PSUseShouldProcessForStateChangingFunctions', '', Scope = 'Function',
+        Justification = 'Not changing state, just an object in memory.'
+    )]
     [CmdletBinding()]
     param(
         $ClientID = $Script:BNetAPI_ClientID,

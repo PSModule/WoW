@@ -3,8 +3,7 @@ Function Import-WoWPowerType {
     if (Test-Path $CacheFilePath) {
         $ImportedPowerTypes = Get-Content $CacheFilePath | ConvertFrom-Json
         foreach ($ImportedPowerType in $ImportedPowerTypes) {
-            $PowerType = [PowerType]::new()
-
+            [PowerType]::new()
         }
     } else {
         Write-WoWVerbose 'Import-WoWCharacters: Nothing to import'
