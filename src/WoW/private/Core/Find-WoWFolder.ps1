@@ -7,7 +7,8 @@ Function Find-WoWFolder {
     Find WoW (retail) folder
 
     .DESCRIPTION
-    Finds WoW (retail) folder, by first checking for the default location, then looking for all folders with a WoW.exe file. User is prompted for possible location where WoW.exe is found.
+    Finds WoW (retail) folder, by first checking for the default location, then looking for all folders with a WoW.exe file.
+    User is prompted for possible location where WoW.exe is found.
 
     .EXAMPLE
     Get-WoWFolder
@@ -38,8 +39,10 @@ Function Find-WoWFolder {
             return $WoWFile.Directory
         }
     } else {
-        $Disks = Get-Volume | Where-Object { ($null -ne $_.DriveLetter) -and ($_.DriveType -eq 'Fixed') } | Select-Object -ExpandProperty DriveLetter | ForEach-Object { Get-Item -Path "$_`:\" }
-        $WoWFolders = $Disks | Get-ChildItem -Recurse -ErrorAction SilentlyContinue -Include 'wow.exe' | Select-Object -ExpandProperty DirectoryName
+        $Disks = Get-Volume | Where-Object { ($null -ne $_.DriveLetter) -and ($_.DriveType -eq 'Fixed') } |
+            Select-Object -ExpandProperty DriveLetter | ForEach-Object { Get-Item -Path "$_`:\" }
+        $WoWFolders = $Disks | Get-ChildItem -Recurse -ErrorAction SilentlyContinue -Include 'wow.exe' |
+            Select-Object -ExpandProperty DirectoryName
 
         if ($WoWFolders.count -gt 1) {
             Write-WoWVerbose 'Multiple instances of WoW detected:'

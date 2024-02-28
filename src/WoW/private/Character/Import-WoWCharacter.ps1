@@ -16,7 +16,10 @@ Function Import-WoWCharacter {
     if (Test-Path $CacheFilePath) {
         $ImportedCharacters = Get-Content $CacheFilePath | ConvertFrom-Json
         foreach ($ImportedCharacter in $ImportedCharacters) {
-            $Character = [Character]($Script:WoW_Characters | Where-Object { ($_.Realm.Name -match $ImportedCharacter.Realm.Name) -and ($_.Name -match $ImportedCharacter.Name) } | Select-Object -First 1)
+            $Character = [Character](
+                $Script:WoW_Characters |
+                    Where-Object { ($_.Realm.Name -match $ImportedCharacter.Realm.Name) -and ($_.Name -match $ImportedCharacter.Name) } |
+                    Select-Object -First 1)
             $Character.ID = $ImportedCharacter.ID
             $Character.Gender = $ImportedCharacter.Gender
             $Character.Faction = $ImportedCharacter.Faction

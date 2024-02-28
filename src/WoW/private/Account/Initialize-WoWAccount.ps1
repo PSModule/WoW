@@ -23,7 +23,8 @@ Function Initialize-WoWAccount {
     [Account[]]$Accounts = $null
 
     Write-WoWVerbose 'Accounts: Finding'
-    $AccountFolders = $WoWAccountsFolderPath | Get-ChildItem -Directory | Where-Object Name -NE SavedVariables | Select-Object Name, FullName | Sort-Object name
+    $AccountFolders = $WoWAccountsFolderPath | Get-ChildItem -Directory | Where-Object Name -NE SavedVariables |
+        Select-Object Name, FullName | Sort-Object name
     Write-WoWVerbose "Accounts: Found $($AccountFolders.count)"
 
     Write-WoWVerbose 'Accounts: Processing'

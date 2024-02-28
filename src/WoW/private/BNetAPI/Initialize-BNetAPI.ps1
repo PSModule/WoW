@@ -73,6 +73,6 @@ $Script:BNetAPI_RegionSettings = @(
     }
 )
 
-$Script:BNetAPI_ClientID = '206367cb92d2430ab5d0f06d9e6ccbe6'
-$Script:BNetAPI_ClientSecret = 'N2CeXceHwUIaJcBLMai3x8s65UTWRXW3'
+$Script:BNetAPI_ClientID = '<get from secret vault>'
+$Script:BNetAPI_ClientSecret = '<get from secret vault>'
 $Script:BNetAPI_Settings = $Script:BNetAPI_RegionSettings[2]

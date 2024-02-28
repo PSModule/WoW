@@ -30,7 +30,15 @@ Function Get-BNetAPIUserAccessToken {
     }
 
     try {
-        $Response = Invoke-RestMethod -Method Post -Uri "$($Script:BNetAPI_Settings.BNetAPIPath)oauth/check_token" -Body $Body -ContentType 'application/x-www-form-urlencoded' -ErrorAction Stop
+        $params = @{
+            Method      = 'Post'
+            Uri         = "$($Script:BNetAPI_Settings.BNetAPIPath)oauth/check_token"
+            Body        = $Body
+            ContentType = 'application/x-www-form-urlencoded'
+            ErrorAction = 'Stop'
+        }
+
+        $Response = Invoke-RestMethod @params
     } catch {
         throw $_
     }

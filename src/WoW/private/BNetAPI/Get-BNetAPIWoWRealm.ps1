@@ -26,7 +26,12 @@ Function Get-BNetAPIWoWRealm {
 
     $RawRealmIndex = Invoke-RestMethod -Method Get -Uri "$($APIURI)data/wow/realm/index?locale=$($Locale)" -Headers $Headers
     $RawRealmIndex.realms | ForEach-Object -ThrottleLimit 50 -Parallel {
-        Invoke-RestMethod -Method Get -Uri "$using:APIURI/data/wow/realm/$($_.id)?namespace=dynamic-eu&locale=$using:Locale" -Headers $using:Headers
+        $params = @{
+            Method  = 'Get'
+            Uri     = "$using:APIURI/data/wow/realm/$($_.id)?namespace=dynamic-eu&locale=$using:Locale"
+            Headers = $using:Headers
+        }
+        Invoke-RestMethod @params
     } | ForEach-Object {
         $Realms += [Realm]::new(
             $_.id,
