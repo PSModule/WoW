@@ -1,4 +1,3 @@
-#Requires -Version 6.0
 $script:ClassMap = @(
     [PSCustomObject]@{
         ClassID    = 1
