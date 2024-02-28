@@ -25,4 +25,4 @@ jobs:
     uses: PSModule/Process-PSModule/.github/workflows/workflow.yml@main
     secrets: inherit
     with:
-      Name: WoWManager
+      Name: WoW

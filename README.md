@@ -1,3 +1,3 @@
 # Demo
 
-Demo repo for actions
+Demo repository for a PSModule
