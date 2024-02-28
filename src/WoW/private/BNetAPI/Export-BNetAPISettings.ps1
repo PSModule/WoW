@@ -1,7 +1,7 @@
-Function Export-BNetAPISettings {
+Function Export-BNetAPISetting {
     [CmdletBinding()]
     param()
-    Write-WoWVerbose 'Export-BNetAPISettings: Export: Start'
+    Write-WoWVerbose 'Export-BNetAPISetting: Export: Start'
     Get-BNetAPIRegion | Select-Object Region | ConvertTo-Json -EnumsAsStrings | Out-File -FilePath "$Script:WoW_Folder_Cache\BNetAPISettings.json" -Force
-    Write-WoWVerbose 'Export-BNetAPISettings: Export: Done'
+    Write-WoWVerbose 'Export-BNetAPISetting: Export: Done'
 }

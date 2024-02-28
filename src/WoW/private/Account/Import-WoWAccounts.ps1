@@ -1,4 +1,4 @@
-Function Import-WoWAccounts {
+Function Import-WoWAccount {
     $CacheFilePath = "$Script:WoW_Folder_Cache\Accounts.json"
     if (Test-Path $CacheFilePath) {
         $ImportedAccounts = Get-Content $CacheFilePath | ConvertFrom-Json
@@ -7,6 +7,6 @@ Function Import-WoWAccounts {
             $Account.IsMain = $ImportedAccount.IsMain
         }
     } else {
-        Write-WoWVerbose 'Import-WoWAccounts: Nothing to import'
+        Write-WoWVerbose 'Import-WoWAccount: Nothing to import'
     }
 }

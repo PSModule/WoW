@@ -1,4 +1,4 @@
-Function Update-WoWRealms {
+Function Update-WoWRealm {
     [Diagnostics.CodeAnalysis.SuppressMessageAttribute(
         'PSUseShouldProcessForStateChangingFunctions', '', Scope = 'Function',
         Justification = 'Not changing state, just an object in memory.'
@@ -14,7 +14,7 @@ Function Update-WoWRealms {
     $Locale = $Script:BNetAPI_Settings.Locale
     #$ApplicableRealms = $Script:WoW_Realms.Name
 
-    Write-WoWVerbose 'Update-WoWRealms: Finding realms online'
+    Write-WoWVerbose 'Update-WoWRealm: Finding realms online'
     $RealmIndex = Invoke-RestMethod -Method Get -Uri "$($APIURI)data/wow/realm/index?locale=$Locale" -Headers $Headers
     $RealmsToUpdate = $RealmIndex.realms # | Where-Object Name -In -Value $ApplicableRealms
     $RealmsToUpdate | ForEach-Object -ThrottleLimit 50 -Parallel {

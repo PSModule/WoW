@@ -1,4 +1,4 @@
-Function Import-WoWRealms {
+Function Import-WoWRealm {
     [Realm[]]$Realms = $null
     $CacheFilePath = "$Script:WoW_Folder_Cache\Realms.json"
     if (Test-Path $CacheFilePath) {
@@ -18,7 +18,7 @@ Function Import-WoWRealms {
         }
         return $Realms
     } else {
-        Write-WoWVerbose 'Import-WoWRealms: Nothing to import'
+        Write-WoWVerbose 'Import-WoWRealm: Nothing to import'
         return
     }
 }

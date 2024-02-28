@@ -6,6 +6,6 @@ Function Import-WoWPowerType {
             [PowerType]::new()
         }
     } else {
-        Write-WoWVerbose 'Import-WoWCharacters: Nothing to import'
+        Write-WoWVerbose 'Import-WoWCharacter: Nothing to import'
     }
 }

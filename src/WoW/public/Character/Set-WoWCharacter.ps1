@@ -28,6 +28,6 @@ Function Set-WoWCharacter {
             $Character.Class = $Script:WoW_Classes | Where-Object Name -Match $ClassName
         }
 
-        Export-WoWCharacters
+        Export-WoWCharacter
     }
 }

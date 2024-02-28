@@ -1,4 +1,4 @@
-Function Update-WoWRealms {
+Function Update-WoWRealm {
     [CmdletBinding()]
     param()
     [Realm[]]$Realms = $null
@@ -10,7 +10,7 @@ Function Update-WoWRealms {
     $Locale = $Script:BNetAPI_Settings.Locale
     #$ApplicableRealms = $Script:WoW_Realms.Name
 
-    Write-WoWVerbose 'Update-WoWRealms: Finding realms online'
+    Write-WoWVerbose 'Update-WoWRealm: Finding realms online'
     $RealmIndex = Invoke-RestMethod -Method Get -Uri "$($APIURI)data/wow/realm/index?locale=$Locale" -Headers $Headers
     $RealmsToUpdate = $RealmIndex.realms # | Where-Object Name -In -Value $ApplicableRealms
     $RealmsToUpdate | ForEach-Object -ThrottleLimit 50 -Parallel {

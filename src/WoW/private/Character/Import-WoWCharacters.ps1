@@ -1,4 +1,4 @@
-Function Import-WoWCharacters {
+Function Import-WoWCharacter {
     $CacheFilePath = "$Script:WoW_Folder_Cache\Characters.json"
     if (Test-Path $CacheFilePath) {
         $ImportedCharacters = Get-Content $CacheFilePath | ConvertFrom-Json
@@ -28,6 +28,6 @@ Function Import-WoWCharacters {
             $Character.Durability = $ImportedCharacter.Durability
         }
     } else {
-        Write-WoWVerbose 'Import-WoWCharacters: Nothing to import'
+        Write-WoWVerbose 'Import-WoWCharacter: Nothing to import'
     }
 }

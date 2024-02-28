@@ -1,4 +1,4 @@
-Function Initialize-WoWAccounts {
+Function Initialize-WoWAccount {
     [CmdletBinding()]
     [OutputType([Account[]])]
     Param(

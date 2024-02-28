@@ -10,5 +10,5 @@ Function Set-WoWAccount {
 
     [Account]$Account = Get-WoWAccount | Where-Object Name -Match $Name
     $Account.IsMain = $IsMain
-    Export-WoWAccounts
+    Export-WoWAccount
 }

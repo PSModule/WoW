@@ -1,7 +1,7 @@
-Function Get-BNetAPIWoWRealms {
+Function Get-BNetAPIWoWRealm {
     [CmdletBinding()]
     param()
-    Write-WoWVerbose 'Get-BNetAPIWoWRealms: Finding'
+    Write-WoWVerbose 'Get-BNetAPIWoWRealm: Finding'
     [Realm[]]$Realms = $null
 
     $Headers = @{

@@ -1,4 +1,4 @@
-Function Initialize-WoWRealms {
+Function Initialize-WoWRealm {
     [CmdletBinding()]
     [OutputType([Realm[]])]
     Param(

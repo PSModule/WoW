@@ -6,5 +6,5 @@ Function Set-BNetAPIRegion {
         $Region
     )
     $Script:BNetAPI_Settings = $Script:BNetAPI_RegionSettings[$Region]
-    Export-BNetAPISettings
+    Export-BNetAPISetting
 }

@@ -27,22 +27,22 @@ Function Invoke-WoWManager {
 
     #Preparing connection with BNet API
     $Script:BNetAPI_AccessToken = New-BNetAPIUserAccessToken
-    Import-BNetAPISettings
-    Export-BNetAPISettings
+    Import-BNetAPISetting
+    Export-BNetAPISetting
 
     #Collecting info from the game folder
     [Addon[]]$Script:WoW_Addons = Initialize-WoWAddon -WoWAddonsFolderPath $Script:WoW_Folder_Addons
-    [Account[]]$Script:WoW_Accounts = Initialize-WoWAccounts -WoWAccountsFolderPath $Script:WoW_Folder_Accounts
-    Import-WoWAccounts
-    Export-WoWAccounts
+    [Account[]]$Script:WoW_Accounts = Initialize-WoWAccount -WoWAccountsFolderPath $Script:WoW_Folder_Accounts
+    Import-WoWAccount
+    Export-WoWAccount
 
-    #[Realm[]]$Script:WoW_Realms = Initialize-WoWRealms -WoWAccountsFolderPath $Script:WoW_Folder_Accounts
-    [Realm[]]$Script:WoW_Realms = Import-WowRealms
-    Export-WoWRealms
+    #[Realm[]]$Script:WoW_Realms = Initialize-WoWRealm -WoWAccountsFolderPath $Script:WoW_Folder_Accounts
+    [Realm[]]$Script:WoW_Realms = Import-WoWRealm
+    Export-WoWRealm
 
     [PowerType[]]$Script:WoW_PowerTypes = Update-WoWPowerTypes
 
-    [Character[]]$Script:WoW_Characters = Initialize-WoWCharacters -WoWAccountsFolderPath $Script:WoW_Folder_Accounts
-    Import-WoWCharacters
-    Export-WoWCharacters
+    [Character[]]$Script:WoW_Characters = Initialize-WoWCharacter -WoWAccountsFolderPath $Script:WoW_Folder_Accounts
+    Import-WoWCharacter
+    Export-WoWCharacter
 }
