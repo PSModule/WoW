@@ -1,13 +1,28 @@
 name: Process-PSModule
 
+run-name: "Process-PSModule - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}"
+
 on:
-  push:
-  workflow_dispatch:
+  pull_request_target:
+    branches:
+      - main
+    types:
+      - closed
+      - opened
+      - reopened
+      - synchronize
+      - labeled
 
 concurrency:
   group: ${{ github.workflow }}
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   Process-PSModule:
-    uses: PSModule/Actions/.github/workflows/Process-PSModule.yml@main
+    uses: PSModule/Process-PSModule/.github/workflows/workflow.yml@main
     secrets: inherit
+    with:
+      Name: WoWManager
