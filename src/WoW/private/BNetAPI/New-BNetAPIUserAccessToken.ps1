@@ -4,19 +4,19 @@ Function New-BNetAPIUserAccessToken {
     <#
     .SYNOPSIS
     Short description
-    
+
     .DESCRIPTION
     Long description
-    
+
     .PARAMETER ClientID
     Parameter description
-    
+
     .PARAMETER ClientSecret
     Parameter description
-    
+
     .EXAMPLE
     An example
-    
+
     .NOTES
     General notes
     #>

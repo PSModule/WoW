@@ -3,16 +3,16 @@ Function Write-WoWVerbose {
     <#
     .SYNOPSIS
     Short description
-    
+
     .DESCRIPTION
     Long description
-    
+
     .PARAMETER Message
     Parameter description
-    
+
     .EXAMPLE
     An example
-    
+
     .NOTES
     General notes
     #>

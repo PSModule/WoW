@@ -3,16 +3,16 @@ Function Set-BNetAPIRegion {
     <#
     .SYNOPSIS
     Short description
-    
+
     .DESCRIPTION
     Long description
-    
+
     .PARAMETER Region
     Parameter description
-    
+
     .EXAMPLE
     An example
-    
+
     .NOTES
     General notes
     #>

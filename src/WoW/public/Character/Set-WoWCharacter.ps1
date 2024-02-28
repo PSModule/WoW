@@ -2,28 +2,28 @@ Function Set-WoWCharacter {
     <#
     .SYNOPSIS
     Short description
-    
+
     .DESCRIPTION
     Long description
-    
+
     .PARAMETER Name
     Parameter description
-    
+
     .PARAMETER Realm
     Parameter description
-    
+
     .PARAMETER IsMain
     Parameter description
-    
+
     .PARAMETER IsMainForClass
     Parameter description
-    
+
     .PARAMETER ClassName
     Parameter description
-    
+
     .EXAMPLE
     An example
-    
+
     .NOTES
     General notes
     #>
