@@ -1,5 +1,9 @@
 
 Function Set-WoWCharacter {
+    [Diagnostics.CodeAnalysis.SuppressMessageAttribute(
+        'PSUseShouldProcessForStateChangingFunctions', '', Scope = 'Function',
+        Justification = 'Not changing state, just an object in memory.'
+    )]
     [Cmdletbinding()]
     param(
         [parameter(mandatory)]

@@ -1,4 +1,8 @@
 Function Set-WoWAccount {
+    [Diagnostics.CodeAnalysis.SuppressMessageAttribute(
+        'PSUseShouldProcessForStateChangingFunctions', '', Scope = 'Function',
+        Justification = 'Not changing state, just an object in memory.'
+    )]
     [cmdletbinding()]
     param(
         [parameter(mandatory)]

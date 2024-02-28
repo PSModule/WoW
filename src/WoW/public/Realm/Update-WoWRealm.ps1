@@ -1,4 +1,8 @@
 Function Update-WoWRealm {
+    [Diagnostics.CodeAnalysis.SuppressMessageAttribute(
+        'PSUseShouldProcessForStateChangingFunctions', '', Scope = 'Function',
+        Justification = 'Not changing state, just an object in memory.'
+    )]
     [CmdletBinding()]
     param()
     [Realm[]]$Realms = $null
