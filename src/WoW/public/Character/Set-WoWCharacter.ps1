@@ -47,7 +47,8 @@ Function Set-WoWCharacter {
         $ClassName
     )
 
-    $Character = [Character]($Script:WoW_Characters | Where-Object { ($_.Realm.Name -match $Realm) -and ($_.Name -match $Name) } | Select-Object -First 1)
+    $Character = [Character]($Script:WoW_Characters |
+            Where-Object { ($_.Realm.Name -match $Realm) -and ($_.Name -match $Name) } | Select-Object -First 1)
     if ($Character.count -eq 1) {
         if ($PSBoundParameters.ContainsKey('IsMain')) {
             $Character.IsMain = $IsMain
