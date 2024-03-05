@@ -6,7 +6,7 @@
             Tags       = 'WoW', 'retail', 'Games', 'Multiboxing'
             LicenseUri = 'https://dev.azure.com/PSModule/WoW/'
             ProjectUri = 'https://dev.azure.com/PSModule/WoW/'
-            IconUri    = 'https://dev.azure.com/PSModule/WoW/icons/icon.png'
+            IconUri    = 'https://dev.azure.com/PSModule/WoW/icon/icon.png'
         }
     }
 }
