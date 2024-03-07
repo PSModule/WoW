@@ -1,6 +1,3 @@
-#Requires -PSEdition Core
-#Requires -Modules NerdFonts
-
 Function Find-WoWFolder {
     <#
     .SYNOPSIS
