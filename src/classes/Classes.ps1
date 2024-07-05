@@ -224,14 +224,14 @@ class AzeriteEssence {
     }
 }
 
-class Class {
+class PlayableClass {
     [UInt16]$ID
     [string]$Name
     [PowerType]$PowerType
 
-    Class() {}
+    PlayableClass() {}
 
-    Class (
+    PlayableClass(
         [UInt16]$ID,
         [string]$Name,
         [PowerType]$PowerType
@@ -255,7 +255,7 @@ class Character {
     [Gender]$Gender
     [Faction]$Faction
     [Race]$Race
-    [Class]$Class
+    [PlayableClass]$Class
     [bool]$IsMainForClass
     [bool]$IsMain
     [Specialization]$Specialization
