@@ -2,7 +2,7 @@
 #[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls13
 
-Enum BNetAPIRegion {
+enum BNetAPIRegion {
     CN = 0
     US = 1
     EU = 2

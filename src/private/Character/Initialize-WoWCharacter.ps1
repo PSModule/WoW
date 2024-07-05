@@ -29,7 +29,7 @@ function Initialize-WoWCharacter {
 
     Write-WoWVerbose 'Characters: Processing'
     $i = 0
-    Foreach ($CharFolder in $CharFolders) {
+    foreach ($CharFolder in $CharFolders) {
         $i++
         $Status = "$i/$($CharFolders.count)"
         Write-WoWVerbose "Characters: Processing: $Status $($CharFolder.Name)"

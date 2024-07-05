@@ -36,6 +36,6 @@ function Get-WoWFolder {
         'Cache' {
             return $Script:WoW_Folder_Cache
         }
-        Default {}
+        default {}
     }
 }
