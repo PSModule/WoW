@@ -1,4 +1,4 @@
-Function Set-WoWAccount {
+function Set-WoWAccount {
     <#
     .SYNOPSIS
     Short description

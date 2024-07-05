@@ -1,4 +1,4 @@
-Function Get-WoWRealm {
+function Get-WoWRealm {
     <#
     .SYNOPSIS
     Short description

@@ -1,4 +1,4 @@
-Function Export-WoWCharacter {
+function Export-WoWCharacter {
     <#
     .SYNOPSIS
     Short description

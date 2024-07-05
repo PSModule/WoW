@@ -1,4 +1,4 @@
-Function Import-WoWPowerType {
+function Import-WoWPowerType {
     <#
     .SYNOPSIS
     Short description

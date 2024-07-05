@@ -1,4 +1,4 @@
-Function Initialize-WoWAccount {
+function Initialize-WoWAccount {
     <#
         .SYNOPSIS
         Short description

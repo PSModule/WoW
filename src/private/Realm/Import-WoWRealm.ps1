@@ -1,4 +1,4 @@
-Function Import-WoWRealm {
+function Import-WoWRealm {
     <#
     .SYNOPSIS
     Short description

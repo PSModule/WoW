@@ -1,4 +1,4 @@
-Function Initialize-WoWRealm {
+function Initialize-WoWRealm {
     <#
     .SYNOPSIS
     Short description

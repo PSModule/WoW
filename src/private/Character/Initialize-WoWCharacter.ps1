@@ -1,4 +1,4 @@
-Function Initialize-WoWCharacter {
+function Initialize-WoWCharacter {
     <#
     .SYNOPSIS
     Short description

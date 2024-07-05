@@ -1,4 +1,4 @@
-Function Get-WoWFolder {
+function Get-WoWFolder {
     <#
     .SYNOPSIS
     Short description

@@ -1,5 +1,5 @@
 
-Function Write-WoWVerbose {
+function Write-WoWVerbose {
     <#
     .SYNOPSIS
     Short description

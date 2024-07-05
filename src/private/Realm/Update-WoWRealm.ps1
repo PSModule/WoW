@@ -1,4 +1,4 @@
-Function Update-WoWRealm {
+function Update-WoWRealm {
     <#
     .SYNOPSIS
     Short description

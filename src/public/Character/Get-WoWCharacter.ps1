@@ -1,4 +1,4 @@
-Function Get-WoWCharacter {
+function Get-WoWCharacter {
     <#
     .SYNOPSIS
     Short description

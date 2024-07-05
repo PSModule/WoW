@@ -1,4 +1,4 @@
-Function Export-BNetAPISetting {
+function Export-BNetAPISetting {
     <#
     .SYNOPSIS
     Short description

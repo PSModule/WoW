@@ -1,4 +1,4 @@
-Function Get-WoWAddon {
+function Get-WoWAddon {
     <#
     .SYNOPSIS
     Short description

@@ -1,6 +1,6 @@
 
 #https://develop.battle.net/documentation/guides/using-oauth/client-credentials-flow
-Function New-BNetAPIUserAccessToken {
+function New-BNetAPIUserAccessToken {
     <#
     .SYNOPSIS
     Short description

@@ -1,4 +1,4 @@
-Function Get-WoWPowerType {
+function Get-WoWPowerType {
     <#
     .SYNOPSIS
     Short description

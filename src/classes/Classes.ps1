@@ -134,25 +134,25 @@ $script:ClassMap = @(
     # Missing Evoker
 )
 
-Enum Role {
+enum Role {
     Tank
     Healer
     Damage
 }
 
-Enum Faction {
+enum Faction {
     Alliance = 0
     Horde = 1
     Neutral = 2
 }
 
-Enum Gender {
+enum Gender {
     Male = 0
     Female = 1
     Unknown = $null
 }
 
-Class Account {
+class Account {
     [string]$Name
     [bool]$IsMain
     [string]$FolderPath
@@ -173,7 +173,7 @@ Class Account {
     }
 }
 
-Class Addon {
+class Addon {
     [string]$Name
     [string]$Interface
     [string]$SavedVariables
@@ -195,7 +195,7 @@ Class Addon {
     }
 }
 
-Class AzeriteEssence {
+class AzeriteEssence {
     [string]$Name
     [int]$ID
     [bool]$Valid
@@ -224,7 +224,7 @@ Class AzeriteEssence {
     }
 }
 
-Class Class {
+class Class {
     [UInt16]$ID
     [string]$Name
     [PowerType]$PowerType
@@ -246,7 +246,7 @@ Class Class {
     }
 }
 
-Class Character {
+class Character {
     [uint]$ID
     [string]$Name
     [Account]$Account
@@ -330,7 +330,7 @@ Class Character {
     }
 }
 
-Class Currency {
+class Currency {
     [UInt16]$ID
     [string]$Name
     [int]$Amount
@@ -352,7 +352,7 @@ Class Currency {
     }
 }
 
-Class PowerType {
+class PowerType {
     [UInt16]$ID
     [string]$Name
 
@@ -371,7 +371,7 @@ Class PowerType {
     }
 }
 
-Class Race {
+class Race {
     [UInt16]$ID
     [string]$Name
     [Faction]$Faction
@@ -399,7 +399,7 @@ Class Race {
     }
 }
 
-Class Realm {
+class Realm {
     [UInt16]$ID
     [string]$Name
     [string]$Region
@@ -445,7 +445,7 @@ Class Realm {
     }
 }
 
-Class Specialization {
+class Specialization {
     [UInt16]$ID
     [string]$Name
     [string]$Description

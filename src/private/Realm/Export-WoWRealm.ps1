@@ -1,4 +1,4 @@
-Function Export-WoWRealm {
+function Export-WoWRealm {
     <#
     .SYNOPSIS
     Short description

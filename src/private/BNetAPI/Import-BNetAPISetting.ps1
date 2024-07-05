@@ -1,4 +1,4 @@
-Function Import-BNetAPISetting {
+function Import-BNetAPISetting {
     <#
     .SYNOPSIS
     Short description

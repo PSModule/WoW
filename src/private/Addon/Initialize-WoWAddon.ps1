@@ -1,4 +1,4 @@
-Function Initialize-WoWAddon {
+function Initialize-WoWAddon {
     <#
     .SYNOPSIS
     Short description

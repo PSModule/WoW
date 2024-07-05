@@ -1,4 +1,4 @@
-Function Select-WoWAddon {
+function Select-WoWAddon {
     <#
     .SYNOPSIS
     Short description
