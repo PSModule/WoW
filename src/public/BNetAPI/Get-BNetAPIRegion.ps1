@@ -1,4 +1,4 @@
-Function Get-BNetAPIRegion {
+function Get-BNetAPIRegion {
     <#
     .SYNOPSIS
     Short description

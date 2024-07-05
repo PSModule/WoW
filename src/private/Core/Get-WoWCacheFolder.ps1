@@ -1,4 +1,4 @@
-Function Get-WoWCacheFolder {
+function Get-WoWCacheFolder {
     <#
     .SYNOPSIS
     Short description

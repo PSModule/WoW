@@ -1,4 +1,4 @@
-Function Export-WoWPowerType {
+function Export-WoWPowerType {
     <#
     .SYNOPSIS
     Short description

@@ -1,4 +1,4 @@
-Function Get-BNetAPIUserInfo {
+function Get-BNetAPIUserInfo {
     <#
     .SYNOPSIS
     Short description

@@ -1,4 +1,4 @@
-Function Set-WoWCharacter {
+function Set-WoWCharacter {
     <#
     .SYNOPSIS
     Short description

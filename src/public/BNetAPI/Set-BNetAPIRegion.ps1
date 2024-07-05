@@ -1,5 +1,5 @@
 
-Function Set-BNetAPIRegion {
+function Set-BNetAPIRegion {
     <#
     .SYNOPSIS
     Short description

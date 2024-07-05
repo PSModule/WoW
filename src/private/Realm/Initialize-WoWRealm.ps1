@@ -1,4 +1,4 @@
-Function Initialize-WoWRealm {
+function Initialize-WoWRealm {
     <#
     .SYNOPSIS
     Short description
@@ -17,7 +17,7 @@ Function Initialize-WoWRealm {
     #>
     [CmdletBinding()]
     [OutputType([Realm[]])]
-    Param(
+    param(
         $WoWAccountsFolderPath = $Script:WoW_Folder_Accounts
     )
     [Realm[]]$Realms = $null

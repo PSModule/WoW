@@ -1,4 +1,4 @@
-Function Find-WoWFolder {
+function Find-WoWFolder {
     <#
     .SYNOPSIS
     Find WoW (retail) folder

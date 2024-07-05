@@ -1,4 +1,4 @@
-Function Initialize-WoWAddon {
+function Initialize-WoWAddon {
     <#
     .SYNOPSIS
     Short description
@@ -17,7 +17,7 @@ Function Initialize-WoWAddon {
     #>
     [CmdletBinding()]
     [OutputType([Addon[]])]
-    Param(
+    param(
         [Parameter(Mandatory)]
         [string]
         $WoWAddonsFolderPath

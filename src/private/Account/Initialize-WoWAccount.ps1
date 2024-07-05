@@ -1,4 +1,4 @@
-Function Initialize-WoWAccount {
+function Initialize-WoWAccount {
     <#
         .SYNOPSIS
         Short description
@@ -17,7 +17,7 @@ Function Initialize-WoWAccount {
     #>
     [CmdletBinding()]
     [OutputType([Account[]])]
-    Param(
+    param(
         $WoWAccountsFolderPath = $Script:WoW_Folder_Accounts
     )
     [Account[]]$Accounts = $null

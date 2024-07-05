@@ -1,4 +1,4 @@
-Function Import-WoWAccount {
+function Import-WoWAccount {
     <#
     .SYNOPSIS
     Short description

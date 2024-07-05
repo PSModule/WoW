@@ -1,5 +1,5 @@
 
-Function Get-BNetAPIUserAccessToken {
+function Get-BNetAPIUserAccessToken {
     <#
     .SYNOPSIS
     Short description

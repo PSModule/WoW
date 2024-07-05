@@ -1,4 +1,4 @@
-Function Show-WoWAddon {
+function Show-WoWAddon {
     <#
     .SYNOPSIS
     Short description

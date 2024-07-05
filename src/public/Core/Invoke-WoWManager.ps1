@@ -1,4 +1,4 @@
-Function Invoke-WoWManager {
+function Invoke-WoWManager {
     <#
     .SYNOPSIS
     Short description

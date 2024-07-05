@@ -1,4 +1,4 @@
-Function Import-WoWCharacter {
+function Import-WoWCharacter {
     <#
     .SYNOPSIS
     Short description

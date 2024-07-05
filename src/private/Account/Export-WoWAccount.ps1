@@ -1,4 +1,4 @@
-Function Export-WoWAccount {
+function Export-WoWAccount {
     <#
     .SYNOPSIS
     Short description

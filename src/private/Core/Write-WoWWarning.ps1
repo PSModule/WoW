@@ -1,4 +1,4 @@
-Function Write-WoWWarning {
+function Write-WoWWarning {
     <#
     .SYNOPSIS
     Short description

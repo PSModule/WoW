@@ -1,4 +1,4 @@
-Function Get-WoWFolder {
+function Get-WoWFolder {
     <#
     .SYNOPSIS
     Short description
@@ -36,6 +36,6 @@ Function Get-WoWFolder {
         'Cache' {
             return $Script:WoW_Folder_Cache
         }
-        Default {}
+        default {}
     }
 }

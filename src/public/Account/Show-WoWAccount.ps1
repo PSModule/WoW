@@ -1,4 +1,4 @@
-Function Show-WoWAccount {
+function Show-WoWAccount {
     <#
     .SYNOPSIS
     Short description

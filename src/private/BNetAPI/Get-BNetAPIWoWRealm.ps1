@@ -1,4 +1,4 @@
-Function Get-BNetAPIWoWRealm {
+function Get-BNetAPIWoWRealm {
     <#
     .SYNOPSIS
     Short description

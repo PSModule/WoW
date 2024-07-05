@@ -1,4 +1,4 @@
-Function Update-WoWPowerType {
+function Update-WoWPowerType {
     <#
     .SYNOPSIS
     Short description

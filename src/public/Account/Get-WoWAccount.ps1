@@ -1,4 +1,4 @@
-Function Get-WoWAccount {
+function Get-WoWAccount {
     <#
     .SYNOPSIS
     Short description
