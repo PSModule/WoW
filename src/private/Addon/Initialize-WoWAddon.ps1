@@ -17,7 +17,7 @@ function Initialize-WoWAddon {
     #>
     [CmdletBinding()]
     [OutputType([Addon[]])]
-    Param(
+    param(
         [Parameter(Mandatory)]
         [string]
         $WoWAddonsFolderPath
