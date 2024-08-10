@@ -247,7 +247,7 @@ class PlayableClass {
 }
 
 class Character {
-    [uint]$ID
+    [UInt16]$ID
     [string]$Name
     [Account]$Account
     [Realm]$Realm
