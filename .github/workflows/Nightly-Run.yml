@@ -1,4 +1,4 @@
-name: CI
+name: Nightly Run
 
 on:
   workflow_dispatch:
@@ -10,5 +10,5 @@ permissions:
 
 jobs:
   Process-PSModule:
-    uses: PSModule/Process-PSModule/.github/workflows/CI.yml@split
+    uses: PSModule/Process-PSModule/.github/workflows/CI.yml@v2
     secrets: inherit
