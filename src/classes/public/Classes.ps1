@@ -1,3 +1,11 @@
+enum BNetAPIRegion {
+    CN = 0
+    US = 1
+    EU = 2
+    KR = 3
+    TW = 4
+}
+
 $script:ClassMap = @(
     [PSCustomObject]@{
         ClassID    = 1

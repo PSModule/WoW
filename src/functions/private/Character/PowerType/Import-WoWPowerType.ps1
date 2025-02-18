@@ -12,6 +12,8 @@ function Import-WoWPowerType {
     .NOTES
     General notes
     #>
+    [CmdletBinding()]
+    param()
     $CacheFilePath = "$Script:WoW_Folder_Cache\PowerType.json"
     if (Test-Path $CacheFilePath) {
         $ImportedPowerTypes = Get-Content $CacheFilePath | ConvertFrom-Json

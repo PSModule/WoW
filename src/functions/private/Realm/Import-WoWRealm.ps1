@@ -12,6 +12,8 @@ function Import-WoWRealm {
     .NOTES
     General notes
     #>
+    [CmdletBinding()]
+    param()
     [Realm[]]$Realms = $null
     $CacheFilePath = "$Script:WoW_Folder_Cache\Realms.json"
     if (Test-Path $CacheFilePath) {

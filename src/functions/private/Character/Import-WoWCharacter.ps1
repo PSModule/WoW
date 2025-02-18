@@ -12,6 +12,8 @@ function Import-WoWCharacter {
     .NOTES
     General notes
     #>
+    [CmdletBinding()]
+    param()
     $CacheFilePath = "$Script:WoW_Folder_Cache\Characters.json"
     if (Test-Path $CacheFilePath) {
         $ImportedCharacters = Get-Content $CacheFilePath | ConvertFrom-Json

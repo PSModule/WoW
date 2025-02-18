@@ -1,15 +1,3 @@
-#Force the Invoke-RestMethod PowerShell cmdlet to use TLS 1.2
-#[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls13
-
-enum BNetAPIRegion {
-    CN = 0
-    US = 1
-    EU = 2
-    KR = 3
-    TW = 4
-}
-
 $Script:BNetAPI_RegionSettings = @(
     @{
         APIURI       = 'https://gateway.battlenet.com.cn/'

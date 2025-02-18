@@ -12,6 +12,9 @@ function Import-WoWAccount {
     .NOTES
     General notes
     #>
+    [CmdletBinding()]
+    param()
+
     $CacheFilePath = "$Script:WoW_Folder_Cache\Accounts.json"
     if (Test-Path $CacheFilePath) {
         $ImportedAccounts = Get-Content $CacheFilePath | ConvertFrom-Json

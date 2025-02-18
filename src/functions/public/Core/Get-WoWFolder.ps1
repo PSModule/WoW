@@ -15,6 +15,7 @@ function Get-WoWFolder {
     .NOTES
     General notes
     #>
+    [CmdletBinding()]
     param(
         [ValidateSet('All', 'Root', 'Account', 'WTF', 'Cache')]
         [String]
