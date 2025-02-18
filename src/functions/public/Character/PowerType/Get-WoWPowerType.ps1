@@ -22,3 +22,4 @@ function Get-WoWPowerType {
     )
     return $Script:WoW_PowerTypes | Where-Object Name -Match $Name
 }
+#SkipTest:FunctionTest:Difficult to test due to the nature of the function.

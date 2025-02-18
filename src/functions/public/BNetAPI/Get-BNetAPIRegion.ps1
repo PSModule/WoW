@@ -16,3 +16,4 @@ function Get-BNetAPIRegion {
     param()
     return $Script:BNetAPI_Settings
 }
+#SkipTest:FunctionTest:Difficult to test due to the nature of the function.

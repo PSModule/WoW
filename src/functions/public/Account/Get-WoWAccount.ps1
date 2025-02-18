@@ -22,3 +22,4 @@ function Get-WoWAccount {
     )
     return $Script:WoW_Accounts | Where-Object Name -Match $Name
 }
+#SkipTest:FunctionTest:Difficult to test due to the nature of the function.

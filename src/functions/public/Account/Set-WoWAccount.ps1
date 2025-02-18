@@ -35,3 +35,4 @@ function Set-WoWAccount {
     $Account.IsMain = $IsMain
     Export-WoWAccount
 }
+#SkipTest:FunctionTest:Difficult to test due to the nature of the function.

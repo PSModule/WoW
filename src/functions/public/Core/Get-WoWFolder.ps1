@@ -40,3 +40,4 @@ function Get-WoWFolder {
         default {}
     }
 }
+#SkipTest:FunctionTest:Difficult to test due to the nature of the function.

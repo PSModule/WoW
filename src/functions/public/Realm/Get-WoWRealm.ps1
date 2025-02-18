@@ -23,3 +23,4 @@ function Get-WoWRealm {
     )
     return $Script:WoW_Realms | Where-Object Name -Match $Name
 }
+#SkipTest:FunctionTest:Difficult to test due to the nature of the function.

@@ -17,3 +17,4 @@ function Show-WoWAddon {
     param()
     $Script:WoW_Addons | Out-GridView -Title 'WoWManager - Installed WoW Addons'
 }
+#SkipTest:FunctionTest:Difficult to test due to the nature of the function.

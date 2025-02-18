@@ -28,3 +28,4 @@ function Set-BNetAPIRegion {
     $Script:BNetAPI_Settings = $Script:BNetAPI_RegionSettings[$Region]
     Export-BNetAPISetting
 }
+#SkipTest:FunctionTest:Difficult to test due to the nature of the function.

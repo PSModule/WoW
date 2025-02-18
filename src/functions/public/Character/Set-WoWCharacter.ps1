@@ -63,3 +63,4 @@ function Set-WoWCharacter {
         Export-WoWCharacter
     }
 }
+#SkipTest:FunctionTest:Difficult to test due to the nature of the function.

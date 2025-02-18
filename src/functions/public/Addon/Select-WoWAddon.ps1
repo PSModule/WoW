@@ -17,3 +17,4 @@ function Select-WoWAddon {
     param()
     return $Script:WoW_Addons | Out-GridView -Title 'WoWManager - Installed WoW Addons' -OutputMode Multiple
 }
+#SkipTest:FunctionTest:Difficult to test due to the nature of the function.

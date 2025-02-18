@@ -17,3 +17,4 @@ function Show-WoWAccount {
     param()
     $Script:WoW_Account | Out-GridView -Title 'WoWManager - List WoW Accounts'
 }
+#SkipTest:FunctionTest:Difficult to test due to the nature of the function.

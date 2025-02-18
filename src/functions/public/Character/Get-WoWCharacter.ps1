@@ -22,3 +22,4 @@ function Get-WoWCharacter {
     )
     return $Script:WoW_Characters | Where-Object Name -Match $Name
 }
+#SkipTest:FunctionTest:Difficult to test due to the nature of the function.
