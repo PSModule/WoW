@@ -33,16 +33,7 @@ function Get-BNetAPIWoWRealm {
         }
         Invoke-RestMethod @params
     } | ForEach-Object {
-        $Realms += [Realm]::new(
-            $_.id,
-            $_.name,
-            $_.region.name,
-            $_.category,
-            $_.locale,
-            $_.timezone,
-            $_.type.name,
-            $_.is_tournament,
-            $_.slug)
+        $Realms += [Realm]::new($_.id, $_.name, $_.region.name, $_.category, $_.locale, $_.timezone, $_.type.name, $_.is_tournament, $_.slug)
     }
     return $Realms
 }
