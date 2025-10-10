@@ -18,9 +18,9 @@ function Get-WoWRealm {
     [CmdletBinding()]
     [OutputType([Addon[]])]
     param(
-        [String]
-        $Name
+        # The name of the realm to get
+        [Parameter(Mandatory)]
+        [String] $Name
     )
     return $Script:WoW_Realms | Where-Object Name -Match $Name
 }
-#SkipTest:FunctionTest:Difficult to test due to the nature of the function.
