@@ -16,7 +16,7 @@ function Get-WoWRealm {
     General notes
     #>
     [CmdletBinding()]
-    [OutputType([Addon[]])]
+    [OutputType([Realm[]])]
     param(
         # The name of the realm to get
         [Parameter(Mandatory)]
