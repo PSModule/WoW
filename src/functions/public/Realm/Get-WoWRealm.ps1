@@ -16,10 +16,11 @@ function Get-WoWRealm {
     General notes
     #>
     [CmdletBinding()]
-    [OutputType([Addon[]])]
+    [OutputType([Realm[]])]
     param(
-        [String]
-        $Name
+        # The name of the realm to get
+        [Parameter(Mandatory)]
+        [String] $Name
     )
     return $Script:WoW_Realms | Where-Object Name -Match $Name
 }
