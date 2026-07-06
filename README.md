@@ -19,7 +19,7 @@ Use PowerShell help and command discovery for module details:
 
 ```powershell
 Get-Command -Module WoW
-Get-Help <CommandName> -Examples
+Get-Help Get-WoWAccount -Examples
 ```
 
 ## Contributing
